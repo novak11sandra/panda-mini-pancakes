@@ -11,7 +11,7 @@ html {
 body {
     height: 100%; width: 100%;
     margin: 0;
-    background-color: #efafe9;
+    background-color: black;
 }
 .flex {
     display: flex;
@@ -99,7 +99,7 @@ body {
 }
 .heroPicContainer img {
     width: 100%;
-    /* border-radius: 100%; */
+    border-radius: 100%;
     filter: grayscale(50%);
     /* margin-left: 30%; */
 }
@@ -115,6 +115,10 @@ body {
     margin-bottom: 2rem;
     /* border-bottom: 1px solid rgb(165, 165, 165); */
 }
+
+.footer h1 {
+    color: white;
+}
 .icon {
     font-size: 200%;
     margin-right: 1rem;
@@ -123,7 +127,7 @@ body {
 .icon2 {
     font-size: 200%;
     margin-right: 1rem;
-    color: black;
+    color: white;
 }
 .skillWrapper {
     margin: 2rem 10% 2rem 10%;
@@ -149,7 +153,7 @@ body {
     padding: .5rem;
     background-color: rgb(192, 137, 26);
     color: white;
-    border-radius: 4px;
+    border-radius: 20px;
     border: none;
     text-decoration: none;
 }
@@ -160,7 +164,22 @@ body {
 .languageWrapper {
     display: flex;
     justify-content: center;
+    /* gap: px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; */
+    
+    
 }
+/* .languageWrapper img {
+    width: calc(33.33% -14px);
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; */
+    
+    
+    
+
 .experienceContainer {
     margin: 0 2rem;
 }
@@ -404,6 +423,9 @@ body {
 @media (max-width: 920px) {
     .languageWrapper {
       flex-direction: column;
+    }
+    .languageWrapper img {
+        width: 100%;
     }
     .experienceContainer {
         margin: 0;
